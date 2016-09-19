@@ -1,5 +1,5 @@
 ---
-# file: primogen/tasks/main.yml
+# file: virtualenv/tasks/main.yml
 #
 # tasks file
 #
@@ -11,6 +11,5 @@
 - include: validation.yml
   tags: validation
 
-- debug: >
-    msg="invoked"
-
+- include: installation.yml
+  tags: installation

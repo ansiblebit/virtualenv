@@ -1,11 +1,15 @@
 ---
-# file: primogen/tests/tasks
+# file: virtualenv/tests/tasks/main.yml
 #
 # Test tasks to verify role execution.
 #
 
-- debug:
-    msg="You need to define tests here!"
-  tags:
-    - debug
-    - test
+- name: is virtualenv installed?
+  shell: which virtualenv
+  changed_when: no
+
+- name: verify virtualenv version
+  shell: virtualenv --version
+  register: test
+  changed_when: no
+  failed_when: test is defined and test.stdout.find("{{ pip_version }}") == -1

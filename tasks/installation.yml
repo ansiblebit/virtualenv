@@ -1,0 +1,11 @@
+---
+# file: virtualenv/tasks/installation.yml
+#
+# installation tasks.
+#
+
+- pip:
+    name=virtualenv
+    version="{{ virtualenv_version }}"
+    state=present
+  become: yes
