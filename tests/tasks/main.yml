@@ -12,4 +12,4 @@
   shell: virtualenv --version
   register: test
   changed_when: no
-  failed_when: test is defined and test.stdout.find("{{ pip_version }}") == -1
+  failed_when: test is defined and test.stdout == "{{ pip_version }}"
