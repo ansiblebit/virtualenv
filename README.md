@@ -21,7 +21,7 @@ Ansible role to install [virtualenv](https://virtualenv.pypa.io/).
 
 ## Requirements
 
-- ansible >= 1.9
+- ansible >= 2.0
 
 
 ## Role Variables
