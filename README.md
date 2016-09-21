@@ -29,6 +29,7 @@ Ansible role to install [virtualenv](https://virtualenv.pypa.io/).
 
 ## Role Variables
 
+- **debug**: flag to run debug tasks.
 - **virtualenv_version**: version to be installed.
 
 
