@@ -1,4 +1,4 @@
-# Role Name
+# virtualenv
 
 [![License](https://img.shields.io/badge/license-New%20BSD-blue.svg?style=flat)](https://raw.githubusercontent.com/ansiblebit/virtualenv/master/LICENSE)
 [![Build Status](https://travis-ci.org/ansiblebit/virtualenv.svg?branch=master)](https://travis-ci.org/ansiblebit/virtualenv)
@@ -10,16 +10,15 @@
 Ansible role to install [virtualenv](https://virtualenv.pypa.io/).
 
 
+
 ## Tests
 
 | Family | Distribution | Version | Test Status |
 |:-:|:-:|:-:|:-:|
-| Debian | Ubuntu  | Yakkety | [![x86_64](http://img.shields.io/badge/x86_64-passed-006400.svg?style=flat)](#) |
 | Debian | Ubuntu  | Xenial  | [![x86_64](http://img.shields.io/badge/x86_64-passed-006400.svg?style=flat)](#) |
-| Debian | Ubuntu  | Wily    | [![x86_64](http://img.shields.io/badge/x86_64-passed-006400.svg?style=flat)](#) |
-| Debian | Ubuntu  | Vivid   | [![x86_64](http://img.shields.io/badge/x86_64-passed-006400.svg?style=flat)](#) |
 | Debian | Ubuntu  | Trusty  | [![x86_64](http://img.shields.io/badge/x86_64-passed-006400.svg?style=flat)](#) |
 | Debian | Ubuntu  | Precise | [![x86_64](http://img.shields.io/badge/x86_64-passed-006400.svg?style=flat)](#) |
+
 
 
 ## Requirements
@@ -33,9 +32,13 @@ Ansible role to install [virtualenv](https://virtualenv.pypa.io/).
 - **virtualenv_version**: version to be installed.
 
 
+- **debug**: flag to run debug tasks.
+
+
 ## Dependencies
 
 - [ansiblebit.pip](https://github.com/ansiblebit/pip)
+
 
 
 ## Playbooks
@@ -94,8 +97,3 @@ $ vagrant provision trusty64.vagrant.dev
 # to access the Vagrant box
 $ vagrant ssh trusty64.vagrant.dev
 ```
-
-
-## Author Information
-
-- [steenzout](https://github.com/steenzout/)
