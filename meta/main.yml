@@ -12,10 +12,7 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - yakkety
         - xenial
-        - wily
-        - vivid
         - trusty
         - precise
   galaxy_tags:

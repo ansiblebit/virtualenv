@@ -162,14 +162,14 @@ vagrant:
       ip: 192.168.124.5
 
   vivid64.vagrant.dev:
-    enabled: true
+    enabled: false
     box: ubuntu/vivid64
     network:
       name: private_network
       ip: 192.168.124.6
 
   wily64.vagrant.dev:
-    enabled: true
+    enabled: false
     box: ubuntu/wily64
     network:
       name: private_network
@@ -183,7 +183,7 @@ vagrant:
       ip: 192.168.124.8
 
   yakkety64.vagrant.dev:
-    enabled: true
+    enabled: false
     box: ubuntu/yakkety64
     network:
       name: private_network
